@@ -1,0 +1,149 @@
+html {
+      scroll-behavior: smooth;
+    }
+
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdan, sans-serif, Arial;
+      margin: 0;
+      margin-top: 0px;
+      padding: 0;
+      padding-top: 100px;
+      background: #f9f9f9;
+      background-color: #FFE6EE;
+      height: auto;
+    }
+  
+nav {
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  padding-right: 100px;
+  border-bottom: 2px solid darkred; /* Aesthetic border design */
+  position: fixed; /* Make the navbar fixed */
+  width: 100%; /* Take the full width of the viewport */
+  top: 0; /* Place the navbar at the top */
+  z-index: 1000; /* Set a higher z-index to ensure it's on top of other content */
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ align-items: left;
+ opacity: 0.7;
+ 
+  
+}
+
+.nav-menu li {
+  margin-right: 20px;
+  opacity: 2;
+  padding: 20px 0;
+      
+      margin-top: 30px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu li:hover{
+  background-color: #E75480;
+}
+
+a {
+  text-decoration: none;
+  
+      color: black;
+      text-align: center;
+      
+}
+
+/* Darker color when clicked */
+.nav-menu li a:active {
+  color: darkred; /* Change to the darker color you prefer */
+  
+}
+
+/* Hamburger Menu Styles */
+.nav-toggle {
+  display: none;
+  
+}
+
+.nav-toggle-label {
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 15px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: lightpink;
+    z-index: 1000;
+    border-bottom: 2px solid darkred; /* Aesthetic border design */
+  }
+
+  .nav-menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-toggle:checked + .nav-menu {
+    display: flex;
+  }
+
+  .nav-toggle-label {
+    display: block;
+    text-align: right;
+    padding: 15px;
+  }
+}
+
+    
+    section {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: white;
+      margin: 50px;
+      margin-top: 100px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+    
+    img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    
+    img:hover {
+      transform: scale(1.1);
+    }
+    
+    .pic{
+      height: 60px;
+      justify-content: space-between;
+    }
